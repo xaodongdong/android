@@ -1,0 +1,406 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ANDROID_INCLUDE_IMX_AUDIO_HARDWARE_H	audio_hardware.h	19;"	d
+ANDROID_INCLUDE_IMX_CONFIG_CS42888_H	config_cs42888.h	19;"	d
+ANDROID_INCLUDE_IMX_CONFIG_HDMI_H	config_hdmi.h	19;"	d
+ANDROID_INCLUDE_IMX_CONFIG_NULLCARD_H	config_nullcard.h	19;"	d
+ANDROID_INCLUDE_IMX_CONFIG_SGTL5000_H	config_sgtl5000.h	19;"	d
+ANDROID_INCLUDE_IMX_CONFIG_SPDIF_H	config_spdif.h	19;"	d
+ANDROID_INCLUDE_IMX_CONFIG_USBAUDIO_H	config_usbaudio.h	20;"	d
+ANDROID_INCLUDE_IMX_CONFIG_WM8958_H	config_wm8958.h	19;"	d
+ANDROID_INCLUDE_IMX_CONFIG_WM8962_H	config_wm8962.h	19;"	d
+ARRAY_SIZE	audio_hardware.h	198;"	d
+CAPTURE_PERIOD_COUNT	tinyalsa_hal.c	77;"	d	file:
+CAPTURE_PERIOD_SIZE	tinyalsa_hal.c	75;"	d	file:
+DEFAULT_OUT_SAMPLING_RATE	tinyalsa_hal.c	81;"	d	file:
+ESAI_PERIOD_SIZE	tinyalsa_hal.c	62;"	d	file:
+GET_COMMAND_STATUS	tinyalsa_hal.c	2154;"	d	file:
+HAL_MODULE_INFO_SYM	tinyalsa_hal.c	/^struct audio_module HAL_MODULE_INFO_SYM = {$/;"	v	typeref:struct:audio_module
+HDMI_PERIOD_SIZE	tinyalsa_hal.c	59;"	d	file:
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE := audio.primary.$(TARGET_BOARD_PLATFORM)$/;"	m
+LOCAL_MODULE_PATH	Android.mk	/^LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)\/hw$/;"	m
+LOCAL_MODULE_TAGS	Android.mk	/^LOCAL_MODULE_TAGS := optional$/;"	m
+LOCAL_PATH	Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_SHARED_LIBRARIES	Android.mk	/^LOCAL_SHARED_LIBRARIES := liblog libcutils libtinyalsa libaudioutils libdl$/;"	m
+LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES := tinyalsa_hal.c$/;"	m
+LOG_TAG	tinyalsa_hal.c	18;"	d	file:
+LONG_PERIOD_MULTIPLIER	tinyalsa_hal.c	69;"	d	file:
+LONG_PERIOD_SIZE	tinyalsa_hal.c	71;"	d	file:
+MAX_AUDIO_CARD_NUM	audio_hardware.h	84;"	d
+MAX_AUDIO_CARD_SCAN	audio_hardware.h	85;"	d
+MAX_NUM_CHANNEL_CONFIGS	audio_hardware.h	153;"	d
+MAX_NUM_CHANNEL_CONFIGS	tinyalsa_hal.c	2200;"	d	file:
+MAX_PREPROCESSORS	audio_hardware.h	140;"	d
+MAX_SUP_CHANNEL_NUM	audio_hardware.h	87;"	d
+MAX_SUP_RATE_NUM	audio_hardware.h	88;"	d
+MIN	audio_hardware.h	27;"	d
+MIN_WRITE_SLEEP_US	tinyalsa_hal.c	79;"	d	file:
+MIXER_SGTL5000_JACK_FUNCTION	config_sgtl5000.h	23;"	d
+MIXER_SGTL5000_SPEAKER_VOLUME	config_sgtl5000.h	24;"	d
+MIXER_WM8958_ADCL_MUX	config_wm8958.h	80;"	d
+MIXER_WM8958_ADCR_MUX	config_wm8958.h	81;"	d
+MIXER_WM8958_ADC_OSR	config_wm8958.h	83;"	d
+MIXER_WM8958_AIF1ADC1L_MIXER_ADCDMIC_SWITCH	config_wm8958.h	91;"	d
+MIXER_WM8958_AIF1ADC1L_MIXER_AIF2_SWITCH	config_wm8958.h	28;"	d
+MIXER_WM8958_AIF1ADC1L_MIXER_AIF2_SWITCH	config_wm8958.h	94;"	d
+MIXER_WM8958_AIF1ADC1R_MIXER_ADCDMIC_SWITCH	config_wm8958.h	92;"	d
+MIXER_WM8958_AIF1ADC1R_MIXER_AIF2_SWITCH	config_wm8958.h	29;"	d
+MIXER_WM8958_AIF1ADC1R_MIXER_AIF2_SWITCH	config_wm8958.h	95;"	d
+MIXER_WM8958_AIF1DAC_MUX	config_wm8958.h	23;"	d
+MIXER_WM8958_AIF2ADC_MUX	config_wm8958.h	25;"	d
+MIXER_WM8958_AIF2DAC2L_MIXER_LEFT_SIDETONE_SWITCH	config_wm8958.h	88;"	d
+MIXER_WM8958_AIF2DAC2R_MIXER_RIGHT_SIDETONE_SWITCH	config_wm8958.h	89;"	d
+MIXER_WM8958_AIF2DAC_MUX	config_wm8958.h	24;"	d
+MIXER_WM8958_AIF3ADC_MUX	config_wm8958.h	26;"	d
+MIXER_WM8958_DAC1L_MIXER_AIF1_1_SWITCH	config_wm8958.h	31;"	d
+MIXER_WM8958_DAC1L_MIXER_AIF1_2_SWITCH	config_wm8958.h	32;"	d
+MIXER_WM8958_DAC1L_MIXER_AIF2_SWITCH	config_wm8958.h	33;"	d
+MIXER_WM8958_DAC1L_MIXER_LEFT_SIDETONE_SWITCH	config_wm8958.h	34;"	d
+MIXER_WM8958_DAC1L_MIXER_RIGHT_SIDETONE_SWITCH	config_wm8958.h	35;"	d
+MIXER_WM8958_DAC1R_MIXER_AIF1_1_SWITCH	config_wm8958.h	37;"	d
+MIXER_WM8958_DAC1R_MIXER_AIF1_2_SWITCH	config_wm8958.h	38;"	d
+MIXER_WM8958_DAC1R_MIXER_AIF2_SWITCH	config_wm8958.h	39;"	d
+MIXER_WM8958_DAC1R_MIXER_LEFT_SIDETONE_SWITCH	config_wm8958.h	40;"	d
+MIXER_WM8958_DAC1R_MIXER_RIGHT_SIDETONE_SWITCH	config_wm8958.h	41;"	d
+MIXER_WM8958_DAC1_SWITCH	config_wm8958.h	53;"	d
+MIXER_WM8958_DAC2_LEFT_SIDETONE_VOLUME	config_wm8958.h	85;"	d
+MIXER_WM8958_DAC2_RIGHT_SIDETONE_VOLUME	config_wm8958.h	86;"	d
+MIXER_WM8958_DAC2_SWITCH	config_wm8958.h	54;"	d
+MIXER_WM8958_EARPIECE_SWITCH	config_wm8958.h	45;"	d
+MIXER_WM8958_EARPIECE_VOLUME	config_wm8958.h	46;"	d
+MIXER_WM8958_HEADPHONE_SWITCH	config_wm8958.h	47;"	d
+MIXER_WM8958_HEADPHONE_VOLUME	config_wm8958.h	48;"	d
+MIXER_WM8958_IN1L_PGA_IN1LN_SWITCH	config_wm8958.h	75;"	d
+MIXER_WM8958_IN1L_PGA_IN1LP_SWITCH	config_wm8958.h	76;"	d
+MIXER_WM8958_IN1L_SWITCH	config_wm8958.h	67;"	d
+MIXER_WM8958_IN1L_VOLUME	config_wm8958.h	68;"	d
+MIXER_WM8958_IN1R_PGA_IN1RN_SWITCH	config_wm8958.h	77;"	d
+MIXER_WM8958_IN1R_PGA_IN1RP_SWITCH	config_wm8958.h	78;"	d
+MIXER_WM8958_IN1R_SWITCH	config_wm8958.h	65;"	d
+MIXER_WM8958_IN1R_VOLUME	config_wm8958.h	66;"	d
+MIXER_WM8958_LEFT_HEADPHONE_MUX	config_wm8958.h	50;"	d
+MIXER_WM8958_LEFT_SIDETONE	config_wm8958.h	97;"	d
+MIXER_WM8958_MIXINL_IN1L_SWITCH	config_wm8958.h	71;"	d
+MIXER_WM8958_MIXINL_IN1L_VOLUME	config_wm8958.h	70;"	d
+MIXER_WM8958_MIXINR_IN1R_SWITCH	config_wm8958.h	73;"	d
+MIXER_WM8958_MIXINR_IN1R_VOLUME	config_wm8958.h	72;"	d
+MIXER_WM8958_RIGHT_HEADPHONE_MUX	config_wm8958.h	51;"	d
+MIXER_WM8958_RIGHT_SIDETONE	config_wm8958.h	98;"	d
+MIXER_WM8958_SPEAKER_MIXER_VOLUME	config_wm8958.h	63;"	d
+MIXER_WM8958_SPEAKER_SWITCH	config_wm8958.h	43;"	d
+MIXER_WM8958_SPEAKER_VOLUME	config_wm8958.h	44;"	d
+MIXER_WM8958_SPKL_BOOST_SPKL_SWITCH	config_wm8958.h	61;"	d
+MIXER_WM8958_SPKL_DAC1_SWITCH	config_wm8958.h	56;"	d
+MIXER_WM8958_SPKL_DAC1_VOLUME	config_wm8958.h	57;"	d
+MIXER_WM8958_SPKR_BOOST_SPKR_SWITCH	config_wm8958.h	62;"	d
+MIXER_WM8958_SPKR_DAC1_SWITCH	config_wm8958.h	58;"	d
+MIXER_WM8958_SPKR_DAC1_VOLUME	config_wm8958.h	59;"	d
+MIXER_WM8962_CAPTURE_SWITCH	config_wm8962.h	29;"	d
+MIXER_WM8962_CAPTURE_VOLUME	config_wm8962.h	30;"	d
+MIXER_WM8962_DIGITAL_CAPTURE_VOLUME	config_wm8962.h	39;"	d
+MIXER_WM8962_DIGITAL_PLAYBACK_VOLUME	config_wm8962.h	41;"	d
+MIXER_WM8962_HEADPHONE_SWITCH	config_wm8962.h	27;"	d
+MIXER_WM8962_HEADPHONE_VOLUME	config_wm8962.h	26;"	d
+MIXER_WM8962_INPGAR_IN3R_SWITCH	config_wm8962.h	32;"	d
+MIXER_WM8962_MIXINR_IN3R_SWITCH	config_wm8962.h	33;"	d
+MIXER_WM8962_MIXINR_IN3R_VOLUME	config_wm8962.h	34;"	d
+MIXER_WM8962_MIXINR_PGA_SWITCH	config_wm8962.h	36;"	d
+MIXER_WM8962_MIXINR_PGA_VOLUME	config_wm8962.h	37;"	d
+MIXER_WM8962_SPEAKER_SWITCH	config_wm8962.h	25;"	d
+MIXER_WM8962_SPEAKER_VOLUME	config_wm8962.h	24;"	d
+MM_FULL_POWER_SAMPLING_RATE	tinyalsa_hal.c	86;"	d	file:
+MM_LOW_POWER_SAMPLING_RATE	tinyalsa_hal.c	84;"	d	file:
+MM_USB_AUDIO_IN_RATE	tinyalsa_hal.c	88;"	d	file:
+NUM_IN_AUX_CNL_CONFIGS	audio_hardware.h	147;"	d
+OUTPUT_DEEP_BUF	audio_hardware.h	/^    OUTPUT_DEEP_BUF,      \/\/ deep PCM buffers output stream$/;"	e	enum:output_type
+OUTPUT_ESAI	audio_hardware.h	/^    OUTPUT_ESAI,$/;"	e	enum:output_type
+OUTPUT_HDMI	audio_hardware.h	/^    OUTPUT_HDMI,$/;"	e	enum:output_type
+OUTPUT_PRIMARY	audio_hardware.h	/^    OUTPUT_PRIMARY,   \/\/ low latency output stream$/;"	e	enum:output_type
+OUTPUT_TOTAL	audio_hardware.h	/^    OUTPUT_TOTAL$/;"	e	enum:output_type
+PCM_ESAI	audio_hardware.h	/^    PCM_ESAI,$/;"	e	enum:pcm_type
+PCM_HDMI	audio_hardware.h	/^    PCM_HDMI,$/;"	e	enum:pcm_type
+PCM_NORMAL	audio_hardware.h	/^    PCM_NORMAL = 0,$/;"	e	enum:pcm_type
+PCM_TOTAL	audio_hardware.h	/^    PCM_TOTAL,$/;"	e	enum:pcm_type
+PLAYBACK_ESAI_PERIOD_COUNT	tinyalsa_hal.c	63;"	d	file:
+PLAYBACK_HDMI_PERIOD_COUNT	tinyalsa_hal.c	60;"	d	file:
+PLAYBACK_LONG_PERIOD_COUNT	tinyalsa_hal.c	73;"	d	file:
+PORT_HDMI	tinyalsa_hal.c	56;"	d	file:
+PORT_MM	tinyalsa_hal.c	53;"	d	file:
+PORT_MM2_UL	tinyalsa_hal.c	54;"	d	file:
+PORT_SPDIF	tinyalsa_hal.c	55;"	d	file:
+PRODUCT_DEVICE_AUTO	tinyalsa_hal.c	94;"	d	file:
+PRODUCT_DEVICE_IMX	tinyalsa_hal.c	93;"	d	file:
+PRODUCT_DEVICE_PROPERTY	tinyalsa_hal.c	91;"	d	file:
+PRODUCT_NAME_PROPERTY	tinyalsa_hal.c	92;"	d	file:
+SHORT_PERIOD_SIZE	tinyalsa_hal.c	67;"	d	file:
+STRING_TO_ENUM	audio_hardware.h	197;"	d
+SUPPORTED_DEVICE_IN_MODULE	audio_hardware.h	217;"	d
+SUPPORTED_DEVICE_OUT_MODULE	audio_hardware.h	205;"	d
+SUPPORT_CARD_NUM	tinyalsa_hal.c	95;"	d	file:
+TTY_MODE_FULL	audio_hardware.h	/^    TTY_MODE_FULL$/;"	e	enum:tty_modes
+TTY_MODE_HCO	audio_hardware.h	/^    TTY_MODE_HCO,$/;"	e	enum:tty_modes
+TTY_MODE_OFF	audio_hardware.h	/^    TTY_MODE_OFF,$/;"	e	enum:tty_modes
+TTY_MODE_VCO	audio_hardware.h	/^    TTY_MODE_VCO,$/;"	e	enum:tty_modes
+active_input	audio_hardware.h	/^    struct imx_stream_in  *active_input;                \/*1 input stream, 2 outout stream*\/$/;"	m	struct:imx_audio_device	typeref:struct:imx_audio_device::imx_stream_in
+active_output	audio_hardware.h	/^    struct imx_stream_out *active_output[OUTPUT_TOTAL];$/;"	m	struct:imx_audio_device	typeref:struct:imx_audio_device::imx_stream_out
+add_echo_reference	tinyalsa_hal.c	/^static void add_echo_reference(struct imx_stream_out *out,$/;"	f	file:
+adev_close	tinyalsa_hal.c	/^static int adev_close(hw_device_t *device)$/;"	f	file:
+adev_close_input_stream	tinyalsa_hal.c	/^static void adev_close_input_stream(struct audio_hw_device *dev,$/;"	f	file:
+adev_close_output_stream	tinyalsa_hal.c	/^static void adev_close_output_stream(struct audio_hw_device *dev,$/;"	f	file:
+adev_dump	tinyalsa_hal.c	/^static int adev_dump(const audio_hw_device_t *device, int fd)$/;"	f	file:
+adev_get_channels_for_device	tinyalsa_hal.c	/^static int adev_get_channels_for_device(struct imx_audio_device *adev, uint32_t devices, unsigned int flag)$/;"	f	file:
+adev_get_format_for_device	tinyalsa_hal.c	/^static int adev_get_format_for_device(struct imx_audio_device *adev, uint32_t devices, unsigned int flag)$/;"	f	file:
+adev_get_input_buffer_size	tinyalsa_hal.c	/^static size_t adev_get_input_buffer_size(const struct audio_hw_device *dev,$/;"	f	file:
+adev_get_mic_mute	tinyalsa_hal.c	/^static int adev_get_mic_mute(const struct audio_hw_device *dev, bool *state)$/;"	f	file:
+adev_get_parameters	tinyalsa_hal.c	/^static char * adev_get_parameters(const struct audio_hw_device *dev,$/;"	f	file:
+adev_get_rate_for_device	tinyalsa_hal.c	/^static int adev_get_rate_for_device(struct imx_audio_device *adev, uint32_t devices, unsigned int flag)$/;"	f	file:
+adev_init_check	tinyalsa_hal.c	/^static int adev_init_check(const struct audio_hw_device *dev)$/;"	f	file:
+adev_open	tinyalsa_hal.c	/^static int adev_open(const hw_module_t* module, const char* name,$/;"	f	file:
+adev_open_input_stream	tinyalsa_hal.c	/^static int adev_open_input_stream(struct audio_hw_device *dev,$/;"	f	file:
+adev_open_output_stream	tinyalsa_hal.c	/^static int adev_open_output_stream(struct audio_hw_device *dev,$/;"	f	file:
+adev_set_master_volume	tinyalsa_hal.c	/^static int adev_set_master_volume(struct audio_hw_device *dev, float volume)$/;"	f	file:
+adev_set_mic_mute	tinyalsa_hal.c	/^static int adev_set_mic_mute(struct audio_hw_device *dev, bool state)$/;"	f	file:
+adev_set_mode	tinyalsa_hal.c	/^static int adev_set_mode(struct audio_hw_device *dev, int mode)$/;"	f	file:
+adev_set_parameters	tinyalsa_hal.c	/^static int adev_set_parameters(struct audio_hw_device *dev, const char *kvpairs)$/;"	f	file:
+adev_set_voice_volume	tinyalsa_hal.c	/^static int adev_set_voice_volume(struct audio_hw_device *dev, float volume)$/;"	f	file:
+audio_card	audio_hardware.h	/^struct audio_card{$/;"	s
+audio_card_list	tinyalsa_hal.c	/^struct audio_card *audio_card_list[SUPPORT_CARD_NUM] = {$/;"	v	typeref:struct:audio_card
+audio_card_num	audio_hardware.h	/^    int audio_card_num;$/;"	m	struct:imx_audio_device
+aux_channels	audio_hardware.h	/^    uint32_t aux_channels;$/;"	m	struct:imx_stream_in
+aux_channels_changed	audio_hardware.h	/^    bool aux_channels_changed;$/;"	m	struct:imx_stream_in
+bluetooth_nrec	audio_hardware.h	/^    bool bluetooth_nrec;$/;"	m	struct:imx_audio_device
+bt_output	audio_hardware.h	/^    struct route_setting *bt_output;$/;"	m	struct:audio_card	typeref:struct:audio_card::route_setting
+bt_output_wm8958	config_wm8958.h	/^static struct route_setting bt_output_wm8958[] = {$/;"	v	typeref:struct:route_setting
+bt_output_wm8962	config_wm8962.h	/^static struct route_setting bt_output_wm8962[] = {$/;"	v	typeref:struct:route_setting
+buf_provider	audio_hardware.h	/^    struct resampler_buffer_provider buf_provider;$/;"	m	struct:imx_stream_in	typeref:struct:imx_stream_in::resampler_buffer_provider
+buffer	audio_hardware.h	/^    char *buffer;$/;"	m	struct:imx_stream_out
+buffer_frames	audio_hardware.h	/^    size_t buffer_frames;$/;"	m	struct:imx_stream_out
+card	audio_hardware.h	/^    int  card;$/;"	m	struct:audio_card
+card_list	audio_hardware.h	/^    struct audio_card *card_list[MAX_AUDIO_CARD_NUM];$/;"	m	struct:imx_audio_device	typeref:struct:imx_audio_device::audio_card
+channel_configs	audio_hardware.h	/^    channel_config_t* channel_configs;$/;"	m	struct:effect_info_s
+channel_mask	audio_hardware.h	/^    audio_channel_mask_t channel_mask;$/;"	m	struct:imx_stream_out
+check_input_parameters	tinyalsa_hal.c	/^static int check_input_parameters(uint32_t sample_rate, int format, int channel_count)$/;"	f	file:
+config	audio_hardware.h	/^    struct pcm_config config;$/;"	m	struct:imx_stream_in	typeref:struct:imx_stream_in::pcm_config
+config	audio_hardware.h	/^    struct pcm_config config[PCM_TOTAL];$/;"	m	struct:imx_stream_out	typeref:struct:imx_stream_out::pcm_config
+convert_output_for_esai	tinyalsa_hal.c	/^static void convert_output_for_esai(const void* buffer, size_t bytes, int channels)$/;"	f	file:
+convert_record_data	tinyalsa_hal.c	/^static int convert_record_data(void *src, void *dst, unsigned int frames, bool bit_24b_2_16b, bool mono2stereo, bool stereo2mono)$/;"	f	file:
+cs42888_card	config_cs42888.h	/^static struct audio_card  cs42888_card = {$/;"	v	typeref:struct:audio_card
+ctl_name	audio_hardware.h	/^    char *ctl_name;$/;"	m	struct:route_setting
+default_rate	audio_hardware.h	/^    unsigned int default_rate;               \/*HAL input samplerate*\/$/;"	m	struct:imx_audio_device
+defaults	audio_hardware.h	/^    struct route_setting *defaults;$/;"	m	struct:audio_card	typeref:struct:audio_card::route_setting
+defaults_SGTL5000	config_sgtl5000.h	/^static struct route_setting defaults_SGTL5000[] = {$/;"	v	typeref:struct:route_setting
+defaults_wm8958	config_wm8958.h	/^static struct route_setting defaults_wm8958[] = {$/;"	v	typeref:struct:route_setting
+defaults_wm8962	config_wm8962.h	/^static struct route_setting defaults_wm8962[] = {$/;"	v	typeref:struct:route_setting
+dev	audio_hardware.h	/^    struct imx_audio_device *dev;$/;"	m	struct:imx_stream_in	typeref:struct:imx_stream_in::imx_audio_device
+dev	audio_hardware.h	/^    struct imx_audio_device *dev;$/;"	m	struct:imx_stream_out	typeref:struct:imx_stream_out::imx_audio_device
+device	audio_hardware.h	/^    int device;$/;"	m	struct:imx_stream_in
+device	audio_hardware.h	/^    int device;$/;"	m	struct:imx_stream_out
+device_is_auto	audio_hardware.h	/^    bool device_is_auto;$/;"	m	struct:imx_audio_device
+do_input_standby	tinyalsa_hal.c	/^static int do_input_standby(struct imx_stream_in *in)$/;"	f	file:
+do_output_standby	tinyalsa_hal.c	/^static int do_output_standby(struct imx_stream_out *out)$/;"	f	file:
+driver_name	audio_hardware.h	/^    char * driver_name;$/;"	m	struct:audio_card
+earpiece_output	audio_hardware.h	/^    struct route_setting *earpiece_output;$/;"	m	struct:audio_card	typeref:struct:audio_card::route_setting
+earpiece_output_wm8958	config_wm8958.h	/^static struct route_setting earpiece_output_wm8958[] = {$/;"	v	typeref:struct:route_setting
+earpiece_output_wm8962	config_wm8962.h	/^static struct route_setting earpiece_output_wm8962[] = {$/;"	v	typeref:struct:route_setting
+echo_reference	audio_hardware.h	/^    struct echo_reference_itfe *echo_reference;$/;"	m	struct:imx_audio_device	typeref:struct:imx_audio_device::echo_reference_itfe
+echo_reference	audio_hardware.h	/^    struct echo_reference_itfe *echo_reference;$/;"	m	struct:imx_stream_in	typeref:struct:imx_stream_in::echo_reference_itfe
+echo_reference	audio_hardware.h	/^    struct echo_reference_itfe *echo_reference;$/;"	m	struct:imx_stream_out	typeref:struct:imx_stream_out::echo_reference_itfe
+effect_info_s	audio_hardware.h	/^struct effect_info_s {$/;"	s
+effect_itfe	audio_hardware.h	/^    effect_handle_t effect_itfe;$/;"	m	struct:effect_info_s
+force_all_standby	tinyalsa_hal.c	/^static void force_all_standby(struct imx_audio_device *adev)$/;"	f	file:
+get_capture_delay	tinyalsa_hal.c	/^static void get_capture_delay(struct imx_stream_in *in,$/;"	f	file:
+get_card_for_device	tinyalsa_hal.c	/^static int get_card_for_device(struct imx_audio_device *adev, int device, unsigned int flag)$/;"	f	file:
+get_echo_reference	tinyalsa_hal.c	/^static struct echo_reference_itfe *get_echo_reference(struct imx_audio_device *adev,$/;"	f	file:
+get_input_buffer_size	tinyalsa_hal.c	/^static size_t get_input_buffer_size(uint32_t sample_rate, int format, int channel_count)$/;"	f	file:
+get_next_buffer	tinyalsa_hal.c	/^static int get_next_buffer(struct resampler_buffer_provider *buffer_provider,$/;"	f	file:
+get_playback_delay	tinyalsa_hal.c	/^static int get_playback_delay(struct imx_stream_out *out,$/;"	f	file:
+hal_module_methods	tinyalsa_hal.c	/^static struct hw_module_methods_t hal_module_methods = {$/;"	v	typeref:struct:hw_module_methods_t	file:
+hdmi_card	config_hdmi.h	/^static struct audio_card  hdmi_card = {$/;"	v	typeref:struct:audio_card
+hs_output	audio_hardware.h	/^    struct route_setting *hs_output;$/;"	m	struct:audio_card	typeref:struct:audio_card::route_setting
+hs_output_wm8958	config_wm8958.h	/^static struct route_setting hs_output_wm8958[] = {$/;"	v	typeref:struct:route_setting
+hs_output_wm8962	config_wm8962.h	/^static struct route_setting hs_output_wm8962[] = {$/;"	v	typeref:struct:route_setting
+hw_device	audio_hardware.h	/^    struct audio_hw_device hw_device;$/;"	m	struct:imx_audio_device	typeref:struct:imx_audio_device::audio_hw_device
+imx_audio_device	audio_hardware.h	/^struct imx_audio_device {$/;"	s
+imx_stream_in	audio_hardware.h	/^struct imx_stream_in {$/;"	s
+imx_stream_out	audio_hardware.h	/^struct imx_stream_out {$/;"	s
+in_add_audio_effect	tinyalsa_hal.c	/^static int in_add_audio_effect(const struct audio_stream *stream,$/;"	f	file:
+in_aux_cnl_configs	audio_hardware.h	/^channel_config_t in_aux_cnl_configs[NUM_IN_AUX_CNL_CONFIGS] = {$/;"	v
+in_call	audio_hardware.h	/^    int in_call;$/;"	m	struct:imx_audio_device
+in_channels	audio_hardware.h	/^    int  in_channels;$/;"	m	struct:audio_card
+in_configure_effect_channels	tinyalsa_hal.c	/^static int in_configure_effect_channels(effect_handle_t effect,$/;"	f	file:
+in_configure_reverse	tinyalsa_hal.c	/^static int in_configure_reverse(struct imx_stream_in *in)$/;"	f	file:
+in_device	audio_hardware.h	/^    int in_device;$/;"	m	struct:imx_audio_device
+in_dump	tinyalsa_hal.c	/^static int in_dump(const struct audio_stream *stream, int fd)$/;"	f	file:
+in_format	audio_hardware.h	/^    int  in_format;$/;"	m	struct:audio_card
+in_get_aux_channels	tinyalsa_hal.c	/^static uint32_t in_get_aux_channels(struct imx_stream_in *in)$/;"	f	file:
+in_get_buffer_size	tinyalsa_hal.c	/^static size_t in_get_buffer_size(const struct audio_stream *stream)$/;"	f	file:
+in_get_channels	tinyalsa_hal.c	/^static uint32_t in_get_channels(const struct audio_stream *stream)$/;"	f	file:
+in_get_format	tinyalsa_hal.c	/^static audio_format_t in_get_format(const struct audio_stream *stream)$/;"	f	file:
+in_get_input_frames_lost	tinyalsa_hal.c	/^static uint32_t in_get_input_frames_lost(struct audio_stream_in *stream)$/;"	f	file:
+in_get_parameters	tinyalsa_hal.c	/^static char * in_get_parameters(const struct audio_stream *stream,$/;"	f	file:
+in_get_sample_rate	tinyalsa_hal.c	/^static uint32_t in_get_sample_rate(const struct audio_stream *stream)$/;"	f	file:
+in_rate	audio_hardware.h	/^    unsigned int  in_rate;$/;"	m	struct:audio_card
+in_read	tinyalsa_hal.c	/^static ssize_t in_read(struct audio_stream_in *stream, void* buffer,$/;"	f	file:
+in_read_audio_effect_channel_configs	tinyalsa_hal.c	/^static void in_read_audio_effect_channel_configs(struct imx_stream_in *in,$/;"	f	file:
+in_reconfigure_channels	tinyalsa_hal.c	/^static int in_reconfigure_channels(struct imx_stream_in *in,$/;"	f	file:
+in_remove_audio_effect	tinyalsa_hal.c	/^static int in_remove_audio_effect(const struct audio_stream *stream,$/;"	f	file:
+in_set_format	tinyalsa_hal.c	/^static int in_set_format(struct audio_stream *stream, audio_format_t format)$/;"	f	file:
+in_set_gain	tinyalsa_hal.c	/^static int in_set_gain(struct audio_stream_in *stream, float gain)$/;"	f	file:
+in_set_parameters	tinyalsa_hal.c	/^static int in_set_parameters(struct audio_stream *stream, const char *kvpairs)$/;"	f	file:
+in_set_sample_rate	tinyalsa_hal.c	/^static int in_set_sample_rate(struct audio_stream *stream, uint32_t rate)$/;"	f	file:
+in_standby	tinyalsa_hal.c	/^static int in_standby(struct audio_stream *stream)$/;"	f	file:
+in_update_aux_channels	tinyalsa_hal.c	/^static void in_update_aux_channels(struct imx_stream_in *in,$/;"	f	file:
+intval	audio_hardware.h	/^    int intval;$/;"	m	struct:route_setting
+is_device_auto	tinyalsa_hal.c	/^static int is_device_auto(void)$/;"	f	file:
+last_time_of_xrun	audio_hardware.h	/^    int last_time_of_xrun;$/;"	m	struct:imx_stream_in
+lock	audio_hardware.h	/^    pthread_mutex_t lock;       \/* see note below on mutex acquisition order *\/$/;"	m	struct:imx_audio_device
+lock	audio_hardware.h	/^    pthread_mutex_t lock;       \/* see note below on mutex acquisition order *\/$/;"	m	struct:imx_stream_in
+lock	audio_hardware.h	/^    pthread_mutex_t lock;       \/* see note below on mutex acquisition order *\/$/;"	m	struct:imx_stream_out
+low_power	audio_hardware.h	/^    bool low_power;$/;"	m	struct:imx_audio_device
+low_power	audio_hardware.h	/^    bool low_power;$/;"	m	struct:imx_stream_out
+main_channels	audio_hardware.h	/^    uint32_t main_channels;$/;"	m	struct:imx_stream_in
+mic_mute	audio_hardware.h	/^    bool mic_mute;$/;"	m	struct:imx_audio_device
+mixer	audio_hardware.h	/^    struct mixer *mixer[MAX_AUDIO_CARD_NUM];$/;"	m	struct:imx_audio_device	typeref:struct:imx_audio_device::mixer
+mm_bt_mic_input	audio_hardware.h	/^    struct route_setting *mm_bt_mic_input;$/;"	m	struct:audio_card	typeref:struct:audio_card::route_setting
+mm_bt_mic_input_wm8958	config_wm8958.h	/^static struct route_setting mm_bt_mic_input_wm8958[] = {$/;"	v	typeref:struct:route_setting
+mm_bt_mic_input_wm8962	config_wm8962.h	/^static struct route_setting mm_bt_mic_input_wm8962[] = {$/;"	v	typeref:struct:route_setting
+mm_hs_mic_input	audio_hardware.h	/^    struct route_setting *mm_hs_mic_input;$/;"	m	struct:audio_card	typeref:struct:audio_card::route_setting
+mm_hs_mic_input_wm8958	config_wm8958.h	/^static struct route_setting mm_hs_mic_input_wm8958[] = {$/;"	v	typeref:struct:route_setting
+mm_hs_mic_input_wm8962	config_wm8962.h	/^static struct route_setting mm_hs_mic_input_wm8962[] = {$/;"	v	typeref:struct:route_setting
+mm_main_mic_input	audio_hardware.h	/^    struct route_setting *mm_main_mic_input;$/;"	m	struct:audio_card	typeref:struct:audio_card::route_setting
+mm_main_mic_input_wm8958	config_wm8958.h	/^static struct route_setting mm_main_mic_input_wm8958[] = {$/;"	v	typeref:struct:route_setting
+mm_main_mic_input_wm8962	config_wm8962.h	/^static struct route_setting mm_main_mic_input_wm8962[] = {$/;"	v	typeref:struct:route_setting
+mm_rate	audio_hardware.h	/^    unsigned int mm_rate;                    \/*HAL hardware output samplerate*\/$/;"	m	struct:imx_audio_device
+mode	audio_hardware.h	/^    int mode;$/;"	m	struct:imx_audio_device
+mute_500ms	audio_hardware.h	/^    size_t mute_500ms;$/;"	m	struct:imx_stream_in
+name	audio_hardware.h	/^    char * name;$/;"	m	struct:audio_card
+name	audio_hardware.h	/^    const char *name;$/;"	m	struct:string_to_enum
+need_echo_reference	audio_hardware.h	/^    bool need_echo_reference;$/;"	m	struct:imx_stream_in
+null_card	config_nullcard.h	/^static struct audio_card  null_card = {$/;"	v	typeref:struct:audio_card
+num_channel_configs	audio_hardware.h	/^    size_t num_channel_configs;$/;"	m	struct:effect_info_s
+num_preprocessors	audio_hardware.h	/^    int num_preprocessors;$/;"	m	struct:imx_stream_in
+out_add_audio_effect	tinyalsa_hal.c	/^static int out_add_audio_effect(const struct audio_stream *stream, effect_handle_t effect)$/;"	f	file:
+out_channels	audio_hardware.h	/^    int  out_channels;$/;"	m	struct:audio_card
+out_channels_name_to_enum_table	tinyalsa_hal.c	/^const struct string_to_enum out_channels_name_to_enum_table[] = {$/;"	v	typeref:struct:string_to_enum
+out_device	audio_hardware.h	/^    int out_device;$/;"	m	struct:imx_audio_device
+out_dump	tinyalsa_hal.c	/^static int out_dump(const struct audio_stream *stream, int fd)$/;"	f	file:
+out_format	audio_hardware.h	/^    int  out_format;$/;"	m	struct:audio_card
+out_get_buffer_size_esai	tinyalsa_hal.c	/^static size_t out_get_buffer_size_esai(const struct audio_stream *stream)$/;"	f	file:
+out_get_buffer_size_hdmi	tinyalsa_hal.c	/^static size_t out_get_buffer_size_hdmi(const struct audio_stream *stream)$/;"	f	file:
+out_get_buffer_size_primary	tinyalsa_hal.c	/^static size_t out_get_buffer_size_primary(const struct audio_stream *stream)$/;"	f	file:
+out_get_channels	tinyalsa_hal.c	/^static uint32_t out_get_channels(const struct audio_stream *stream)$/;"	f	file:
+out_get_format	tinyalsa_hal.c	/^static audio_format_t out_get_format(const struct audio_stream *stream)$/;"	f	file:
+out_get_latency_esai	tinyalsa_hal.c	/^static uint32_t out_get_latency_esai(const struct audio_stream_out *stream)$/;"	f	file:
+out_get_latency_hdmi	tinyalsa_hal.c	/^static uint32_t out_get_latency_hdmi(const struct audio_stream_out *stream)$/;"	f	file:
+out_get_latency_primary	tinyalsa_hal.c	/^static uint32_t out_get_latency_primary(const struct audio_stream_out *stream)$/;"	f	file:
+out_get_parameters	tinyalsa_hal.c	/^static char * out_get_parameters(const struct audio_stream *stream, const char *keys)$/;"	f	file:
+out_get_presentation_position	tinyalsa_hal.c	/^static int out_get_presentation_position(const struct audio_stream_out *stream,$/;"	f	file:
+out_get_render_position	tinyalsa_hal.c	/^static int out_get_render_position(const struct audio_stream_out *stream,$/;"	f	file:
+out_get_sample_rate	tinyalsa_hal.c	/^static uint32_t out_get_sample_rate(const struct audio_stream *stream)$/;"	f	file:
+out_get_sample_rate_esai	tinyalsa_hal.c	/^static uint32_t out_get_sample_rate_esai(const struct audio_stream *stream)$/;"	f	file:
+out_get_sample_rate_hdmi	tinyalsa_hal.c	/^static uint32_t out_get_sample_rate_hdmi(const struct audio_stream *stream)$/;"	f	file:
+out_rate	audio_hardware.h	/^    unsigned int  out_rate;$/;"	m	struct:audio_card
+out_read_hdmi_channel_masks	tinyalsa_hal.c	/^static int out_read_hdmi_channel_masks(struct imx_audio_device *adev, struct imx_stream_out *out) {$/;"	f	file:
+out_read_hdmi_rates	tinyalsa_hal.c	/^static int out_read_hdmi_rates(struct imx_audio_device *adev, struct imx_stream_out *out) {$/;"	f	file:
+out_remove_audio_effect	tinyalsa_hal.c	/^static int out_remove_audio_effect(const struct audio_stream *stream, effect_handle_t effect)$/;"	f	file:
+out_set_format	tinyalsa_hal.c	/^static int out_set_format(struct audio_stream *stream, audio_format_t format)$/;"	f	file:
+out_set_parameters	tinyalsa_hal.c	/^static int out_set_parameters(struct audio_stream *stream, const char *kvpairs)$/;"	f	file:
+out_set_sample_rate	tinyalsa_hal.c	/^static int out_set_sample_rate(struct audio_stream *stream, uint32_t rate)$/;"	f	file:
+out_set_volume	tinyalsa_hal.c	/^static int out_set_volume(struct audio_stream_out *stream, float left,$/;"	f	file:
+out_standby	tinyalsa_hal.c	/^static int out_standby(struct audio_stream *stream)$/;"	f	file:
+out_write_esai	tinyalsa_hal.c	/^static ssize_t out_write_esai(struct audio_stream_out *stream, const void* buffer,$/;"	f	file:
+out_write_hdmi	tinyalsa_hal.c	/^static ssize_t out_write_hdmi(struct audio_stream_out *stream, const void* buffer,$/;"	f	file:
+out_write_primary	tinyalsa_hal.c	/^static ssize_t out_write_primary(struct audio_stream_out *stream, const void* buffer,$/;"	f	file:
+output_type	audio_hardware.h	/^enum output_type {$/;"	g
+pcm	audio_hardware.h	/^    struct pcm *pcm;$/;"	m	struct:imx_stream_in	typeref:struct:imx_stream_in::pcm
+pcm	audio_hardware.h	/^    struct pcm *pcm[PCM_TOTAL];$/;"	m	struct:imx_stream_out	typeref:struct:imx_stream_out::pcm
+pcm_config_esai_multi	tinyalsa_hal.c	/^struct pcm_config pcm_config_esai_multi = {$/;"	v	typeref:struct:pcm_config
+pcm_config_hdmi_multi	tinyalsa_hal.c	/^struct pcm_config pcm_config_hdmi_multi = {$/;"	v	typeref:struct:pcm_config
+pcm_config_mm_in	tinyalsa_hal.c	/^struct pcm_config pcm_config_mm_in = {$/;"	v	typeref:struct:pcm_config
+pcm_config_mm_out	tinyalsa_hal.c	/^struct pcm_config pcm_config_mm_out = {$/;"	v	typeref:struct:pcm_config
+pcm_modem_dl	audio_hardware.h	/^    struct pcm *pcm_modem_dl;$/;"	m	struct:imx_audio_device	typeref:struct:imx_audio_device::pcm
+pcm_modem_ul	audio_hardware.h	/^    struct pcm *pcm_modem_ul;$/;"	m	struct:imx_audio_device	typeref:struct:imx_audio_device::pcm
+pcm_read_convert	tinyalsa_hal.c	/^static int pcm_read_convert(struct imx_stream_in *in, struct pcm *pcm, void *data, unsigned int count)$/;"	f	file:
+pcm_read_wrapper	tinyalsa_hal.c	/^static int pcm_read_wrapper(struct pcm *pcm, const void * buffer, size_t bytes)$/;"	f	file:
+pcm_type	audio_hardware.h	/^enum pcm_type {$/;"	g
+pcm_write_wrapper	tinyalsa_hal.c	/^static int pcm_write_wrapper(struct pcm *pcm, const void * buffer, size_t bytes, int flags)$/;"	f	file:
+preprocessors	audio_hardware.h	/^    struct effect_info_s preprocessors[MAX_PREPROCESSORS];$/;"	m	struct:imx_stream_in	typeref:struct:imx_stream_in::effect_info_s
+proc_buf_frames	audio_hardware.h	/^    size_t proc_buf_frames;$/;"	m	struct:imx_stream_in
+proc_buf_in	audio_hardware.h	/^    int16_t *proc_buf_in;$/;"	m	struct:imx_stream_in
+proc_buf_out	audio_hardware.h	/^    int16_t *proc_buf_out;$/;"	m	struct:imx_stream_in
+proc_buf_size	audio_hardware.h	/^    size_t proc_buf_size;$/;"	m	struct:imx_stream_in
+process_frames	tinyalsa_hal.c	/^static ssize_t process_frames(struct imx_stream_in *in, void* buffer, ssize_t frames)$/;"	f	file:
+push_echo_reference	tinyalsa_hal.c	/^static void push_echo_reference(struct imx_stream_in *in, size_t frames)$/;"	f	file:
+put_echo_reference	tinyalsa_hal.c	/^static void put_echo_reference(struct imx_audio_device *adev,$/;"	f	file:
+read_buf	audio_hardware.h	/^    int16_t *read_buf;$/;"	m	struct:imx_stream_in
+read_buf_frames	audio_hardware.h	/^    size_t read_buf_frames;$/;"	m	struct:imx_stream_in
+read_buf_size	audio_hardware.h	/^    size_t read_buf_size;$/;"	m	struct:imx_stream_in
+read_frames	tinyalsa_hal.c	/^static ssize_t read_frames(struct imx_stream_in *in, void *buffer, ssize_t frames)$/;"	f	file:
+read_status	audio_hardware.h	/^    int read_status;$/;"	m	struct:imx_stream_in
+read_tmp_buf	audio_hardware.h	/^    int32_t *read_tmp_buf;$/;"	m	struct:imx_stream_in
+read_tmp_buf_frames	audio_hardware.h	/^    size_t read_tmp_buf_frames;$/;"	m	struct:imx_stream_in
+read_tmp_buf_size	audio_hardware.h	/^    size_t read_tmp_buf_size;$/;"	m	struct:imx_stream_in
+ref_buf	audio_hardware.h	/^    int16_t *ref_buf;$/;"	m	struct:imx_stream_in
+ref_buf_size	audio_hardware.h	/^    size_t ref_buf_size;$/;"	m	struct:imx_stream_in
+ref_frames_in	audio_hardware.h	/^    size_t ref_frames_in;$/;"	m	struct:imx_stream_in
+release_buffer	tinyalsa_hal.c	/^static void release_buffer(struct resampler_buffer_provider *buffer_provider,$/;"	f	file:
+remove_echo_reference	tinyalsa_hal.c	/^static void remove_echo_reference(struct imx_stream_out *out,$/;"	f	file:
+requested_channel	audio_hardware.h	/^    unsigned int requested_channel;$/;"	m	struct:imx_stream_in
+requested_format	audio_hardware.h	/^    unsigned int requested_format;$/;"	m	struct:imx_stream_in
+requested_rate	audio_hardware.h	/^    unsigned int requested_rate;$/;"	m	struct:imx_stream_in
+resampler	audio_hardware.h	/^    struct resampler_itfe *resampler;$/;"	m	struct:imx_stream_in	typeref:struct:imx_stream_in::resampler_itfe
+resampler	audio_hardware.h	/^    struct resampler_itfe *resampler;$/;"	m	struct:imx_stream_out	typeref:struct:imx_stream_out::resampler_itfe
+route_setting	audio_hardware.h	/^struct route_setting$/;"	s
+scan_available_device	tinyalsa_hal.c	/^static int scan_available_device(struct imx_audio_device *adev, bool rescanusb)$/;"	f	file:
+select_input_device	tinyalsa_hal.c	/^static void select_input_device(struct imx_audio_device *adev)$/;"	f	file:
+select_mode	tinyalsa_hal.c	/^static void select_mode(struct imx_audio_device *adev)$/;"	f	file:
+select_output_device	tinyalsa_hal.c	/^static void select_output_device(struct imx_audio_device *adev)$/;"	f	file:
+set_preprocessor_echo_delay	tinyalsa_hal.c	/^static int set_preprocessor_echo_delay(effect_handle_t handle,$/;"	f	file:
+set_preprocessor_param	tinyalsa_hal.c	/^static int set_preprocessor_param(effect_handle_t handle,$/;"	f	file:
+set_route_by_array	tinyalsa_hal.c	/^static int set_route_by_array(struct mixer *mixer, struct route_setting *route,$/;"	f	file:
+sgtl5000_card	config_sgtl5000.h	/^static struct audio_card  sgtl5000_card = {$/;"	v	typeref:struct:audio_card
+source	audio_hardware.h	/^    int source;$/;"	m	struct:imx_stream_in
+spdif_card	config_spdif.h	/^static struct audio_card  spdif_card = {$/;"	v	typeref:struct:audio_card
+speaker_output	audio_hardware.h	/^    struct route_setting *speaker_output;$/;"	m	struct:audio_card	typeref:struct:audio_card::route_setting
+speaker_output_wm8958	config_wm8958.h	/^static struct route_setting speaker_output_wm8958[] = {$/;"	v	typeref:struct:route_setting
+speaker_output_wm8962	config_wm8962.h	/^static struct route_setting speaker_output_wm8962[] = {$/;"	v	typeref:struct:route_setting
+standby	audio_hardware.h	/^    int standby;$/;"	m	struct:imx_stream_in
+standby	audio_hardware.h	/^    int standby;$/;"	m	struct:imx_stream_out
+start_input_stream	tinyalsa_hal.c	/^static int start_input_stream(struct imx_stream_in *in)$/;"	f	file:
+start_output_stream_esai	tinyalsa_hal.c	/^static int start_output_stream_esai(struct imx_stream_out *out)$/;"	f	file:
+start_output_stream_hdmi	tinyalsa_hal.c	/^static int start_output_stream_hdmi(struct imx_stream_out *out)$/;"	f	file:
+start_output_stream_primary	tinyalsa_hal.c	/^static int start_output_stream_primary(struct imx_stream_out *out)$/;"	f	file:
+stream	audio_hardware.h	/^    struct audio_stream_in stream;$/;"	m	struct:imx_stream_in	typeref:struct:imx_stream_in::audio_stream_in
+stream	audio_hardware.h	/^    struct audio_stream_out stream;$/;"	m	struct:imx_stream_out	typeref:struct:imx_stream_out::audio_stream_out
+string_to_enum	audio_hardware.h	/^struct string_to_enum {$/;"	s
+strval	audio_hardware.h	/^    char *strval;$/;"	m	struct:route_setting
+sup_channel_masks	audio_hardware.h	/^    audio_channel_mask_t sup_channel_masks[3];$/;"	m	struct:imx_stream_out
+sup_rates	audio_hardware.h	/^    int sup_rates[MAX_SUP_RATE_NUM];$/;"	m	struct:imx_stream_out
+supported_in_devices	audio_hardware.h	/^    int  supported_in_devices;$/;"	m	struct:audio_card
+supported_out_devices	audio_hardware.h	/^    int  supported_out_devices;$/;"	m	struct:audio_card
+tty_mode	audio_hardware.h	/^    int tty_mode;$/;"	m	struct:imx_audio_device
+tty_modes	audio_hardware.h	/^enum tty_modes {$/;"	g
+update_echo_reference	tinyalsa_hal.c	/^static int32_t update_echo_reference(struct imx_stream_in *in, size_t frames)$/;"	f	file:
+usb_card_name	audio_hardware.h	/^    char usb_card_name[128];$/;"	m	struct:imx_audio_device
+usbaudio_card	config_usbaudio.h	/^static struct audio_card  usbaudio_card = {$/;"	v	typeref:struct:audio_card
+value	audio_hardware.h	/^    uint32_t value;$/;"	m	struct:string_to_enum
+voice_volume	audio_hardware.h	/^    float voice_volume;$/;"	m	struct:imx_audio_device
+vx_bt_mic_input	audio_hardware.h	/^    struct route_setting *vx_bt_mic_input;$/;"	m	struct:audio_card	typeref:struct:audio_card::route_setting
+vx_bt_mic_input_wm8958	config_wm8958.h	/^static struct route_setting vx_bt_mic_input_wm8958[] = {$/;"	v	typeref:struct:route_setting
+vx_bt_mic_input_wm8962	config_wm8962.h	/^static struct route_setting vx_bt_mic_input_wm8962[] = {$/;"	v	typeref:struct:route_setting
+vx_hs_mic_input	audio_hardware.h	/^    struct route_setting *vx_hs_mic_input;$/;"	m	struct:audio_card	typeref:struct:audio_card::route_setting
+vx_hs_mic_input_wm8958	config_wm8958.h	/^static struct route_setting vx_hs_mic_input_wm8958[] = {$/;"	v	typeref:struct:route_setting
+vx_hs_mic_input_wm8962	config_wm8962.h	/^static struct route_setting vx_hs_mic_input_wm8962[] = {$/;"	v	typeref:struct:route_setting
+vx_main_mic_input	audio_hardware.h	/^    struct route_setting *vx_main_mic_input;$/;"	m	struct:audio_card	typeref:struct:audio_card::route_setting
+vx_main_mic_input_wm8958	config_wm8958.h	/^static struct route_setting vx_main_mic_input_wm8958[] = {$/;"	v	typeref:struct:route_setting
+vx_main_mic_input_wm8962	config_wm8962.h	/^static struct route_setting vx_main_mic_input_wm8962[] = {$/;"	v	typeref:struct:route_setting
+wb_amr	audio_hardware.h	/^    int  wb_amr;$/;"	m	struct:imx_audio_device
+wm8958_card	config_wm8958.h	/^static struct audio_card  wm8958_card = {$/;"	v	typeref:struct:audio_card
+wm8962_card	config_wm8962.h	/^static struct audio_card  wm8962_card = {$/;"	v	typeref:struct:audio_card
+write_flags	audio_hardware.h	/^    int write_flags[PCM_TOTAL];$/;"	m	struct:imx_stream_out
+write_threshold	audio_hardware.h	/^    int write_threshold[PCM_TOTAL];$/;"	m	struct:imx_stream_out
+written	audio_hardware.h	/^    uint64_t written;$/;"	m	struct:imx_stream_out
