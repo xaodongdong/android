@@ -16,7 +16,7 @@
 /* Copyright (C) 2012-2013 Freescale Semiconductor, Inc. */
 
 #define LOG_TAG "audio_hw_primary"
-//#define LOG_NDEBUG 0
+#define LOG_NDEBUG 0
 
 #include <errno.h>
 #include <pthread.h>
@@ -93,6 +93,8 @@
 #define PRODUCT_DEVICE_IMX      "imx"
 #define PRODUCT_DEVICE_AUTO     "sabreauto"
 #define SUPPORT_CARD_NUM        8
+
+#define FORCE_STANDBY_HDMI
 
 /*"null_card" must be in the end of this array*/
 struct audio_card *audio_card_list[SUPPORT_CARD_NUM] = {
@@ -327,7 +329,7 @@ static void select_mode(struct imx_audio_device *adev)
                 adev->out_device = AUDIO_DEVICE_OUT_EARPIECE;
                 adev->in_device = AUDIO_DEVICE_IN_BUILTIN_MIC & ~AUDIO_DEVICE_BIT_IN;
             } else
-                adev->out_device &= ~AUDIO_DEVICE_OUT_SPEAKER;
+                adev->out_device &= ~AUDIO_DEVICE_OUT_ALL;
             select_output_device(adev);
 
             adev_set_voice_volume(&adev->hw_device, adev->voice_volume);
@@ -518,7 +520,6 @@ static int start_output_stream_primary(struct imx_stream_out *out)
     bool success = false;
 
     ALOGV("start_output_stream... %d, device %d",(int)out, out->device);
-
     if (adev->mode != AUDIO_MODE_IN_CALL) {
         /* FIXME: only works if only one output can be active at a time */
         select_output_device(adev);
@@ -533,8 +534,8 @@ static int start_output_stream_primary(struct imx_stream_out *out)
 
         card = get_card_for_device(adev, pcm_device, PCM_OUT);
         out->pcm[PCM_NORMAL] = pcm_open(card, port,out->write_flags[PCM_NORMAL], &out->config[PCM_NORMAL]);
-        ALOGW("card %d, port %d device 0x%x", card, port, out->device);
-        ALOGW("rate %d, channel %d period_size 0x%x", out->config[PCM_NORMAL].rate, out->config[PCM_NORMAL].channels, out->config[PCM_NORMAL].period_size);
+        ALOGW("1card %d, port %d device 0x%x", card, port, out->device);
+        ALOGW("1rate %d, channel %d period_size 0x%x", out->config[PCM_NORMAL].rate, out->config[PCM_NORMAL].channels, out->config[PCM_NORMAL].period_size);
         success = true;
     }
 
@@ -545,8 +546,8 @@ static int start_output_stream_primary(struct imx_stream_out *out)
         out->config[PCM_HDMI] = pcm_config_mm_out;
         card = get_card_for_device(adev, pcm_device, PCM_OUT);
         out->pcm[PCM_HDMI] = pcm_open(card, port,out->write_flags[PCM_HDMI], &out->config[PCM_HDMI]);
-        ALOGW("card %d, port %d device 0x%x", card, port, out->device);
-        ALOGW("rate %d, channel %d period_size 0x%x", out->config[PCM_HDMI].rate, out->config[PCM_HDMI].channels, out->config[PCM_HDMI].period_size);
+        ALOGW("2card %d, port %d device 0x%x", card, port, out->device);
+        ALOGW("2rate %d, channel %d period_size 0x%x", out->config[PCM_HDMI].rate, out->config[PCM_HDMI].channels, out->config[PCM_HDMI].period_size);
         success = true;
     }
     /* default to low power: will be corrected in out_write if necessary before first write to
@@ -596,8 +597,8 @@ static int start_output_stream_hdmi(struct imx_stream_out *out)
     }
 
     card = get_card_for_device(adev, out->device & AUDIO_DEVICE_OUT_AUX_DIGITAL, PCM_OUT);
-    ALOGW("card %d, port %d device 0x%x", card, port, out->device);
-    ALOGW("rate %d, channel %d period_size 0x%x", out->config[PCM_HDMI].rate, out->config[PCM_HDMI].channels, out->config[PCM_HDMI].period_size);
+    ALOGW("3card %d, port %d device 0x%x", card, port, out->device);
+    ALOGW("3rate %d, channel %d period_size 0x%x", out->config[PCM_HDMI].rate, out->config[PCM_HDMI].channels, out->config[PCM_HDMI].period_size);
 
     out->pcm[PCM_HDMI] = pcm_open(card, port, PCM_OUT, &out->config[PCM_HDMI]);
 
@@ -627,8 +628,8 @@ static int start_output_stream_esai(struct imx_stream_out *out)
     }
 
     card = get_card_for_device(adev, out->device & AUDIO_DEVICE_OUT_SPEAKER, PCM_OUT);
-    ALOGW("card %d, port %d device 0x%x", card, port, out->device);
-    ALOGW("rate %d, channel %d period_size 0x%x", out->config[PCM_ESAI].rate, out->config[PCM_ESAI].channels, out->config[PCM_ESAI].period_size);
+    ALOGW("4card %d, port %d device 0x%x", card, port, out->device);
+    ALOGW("4rate %d, channel %d period_size 0x%x", out->config[PCM_ESAI].rate, out->config[PCM_ESAI].channels, out->config[PCM_ESAI].period_size);
 
     out->pcm[PCM_ESAI] = pcm_open(card, port, PCM_OUT, &out->config[PCM_ESAI]);
 
@@ -936,6 +937,7 @@ static int out_set_parameters(struct audio_stream *stream, const char *kvpairs)
                         adev->active_input->source == AUDIO_SOURCE_VOICE_COMMUNICATION) {
                     force_input_standby = true;
                 }
+#ifndef FORCE_STANDBY_HDMI
                 /* force standby if moving to/from HDMI */
                 if (((val & AUDIO_DEVICE_OUT_AUX_DIGITAL) ^
                         (adev->out_device & AUDIO_DEVICE_OUT_AUX_DIGITAL)) ||
@@ -947,12 +949,15 @@ static int out_set_parameters(struct audio_stream *stream, const char *kvpairs)
                         (adev->out_device & AUDIO_DEVICE_OUT_SPEAKER)) ||
                         (adev->mode == AUDIO_MODE_IN_CALL))
                     do_output_standby(out);
+#endif
             }
+#ifndef FORCE_STANDBY_HDMI
             if (out != adev->active_output[OUTPUT_HDMI]) {
                 adev->out_device = val;
                 out->device    = val;
                 select_output_device(adev);
             }
+#endif
         }
         pthread_mutex_unlock(&out->lock);
         if (force_input_standby) {
@@ -963,6 +968,9 @@ static int out_set_parameters(struct audio_stream *stream, const char *kvpairs)
         }
         pthread_mutex_unlock(&adev->lock);
     }
+	adev->out_device &= ~AUDIO_DEVICE_OUT_ALL;
+	adev->out_device |= out->device;
+	select_output_device(adev);
     ALOGW("out_set_parameters %s, ret %d, out %d",kvpairs, ret, (int)out);
     str_parms_destroy(parms);
     return ret;
@@ -1487,8 +1495,8 @@ static int start_input_stream(struct imx_stream_in *in)
         in->config.format  = format;
     }
 
-    ALOGW("card %d, port %d device 0x%x", card, port, in->device);
-    ALOGW("rate %d, channel %d format %d, period_size 0x%x", in->config.rate, in->config.channels, 
+    ALOGW("5card %d, port %d device 0x%x", card, port, in->device);
+    ALOGW("5rate %d, channel %d format %d, period_size 0x%x", in->config.rate, in->config.channels, 
                                  in->config.format, in->config.period_size);
 
     if (in->need_echo_reference && in->echo_reference == NULL)
@@ -3074,7 +3082,7 @@ static int scan_available_device(struct imx_audio_device *adev, bool rescanusb)
         imx_control = control_open(i);
         if(!imx_control)
             break;
-        ALOGW("card %d, id %s ,driver %s, name %s", i, control_card_info_get_id(imx_control),
+        ALOGW("6card %d, id %s ,driver %s, name %s", i, control_card_info_get_id(imx_control),
                                                       control_card_info_get_driver(imx_control),
                                                       control_card_info_get_name(imx_control));
         for(j = 0; j < SUPPORT_CARD_NUM; j++) {
@@ -3227,8 +3235,8 @@ static int adev_open(const hw_module_t* module, const char* name,
     for(i = 0; i < MAX_AUDIO_CARD_NUM; i++)
         set_route_by_array(adev->mixer[i], adev->card_list[i]->defaults, 1);
     adev->mode    = AUDIO_MODE_NORMAL;
-    adev->out_device = AUDIO_DEVICE_OUT_SPEAKER;
-    adev->in_device  = AUDIO_DEVICE_IN_BUILTIN_MIC & ~AUDIO_DEVICE_BIT_IN;
+    adev->out_device &= ~AUDIO_DEVICE_OUT_ALL;
+	adev->in_device  = AUDIO_DEVICE_IN_BUILTIN_MIC & ~AUDIO_DEVICE_BIT_IN;
     select_output_device(adev);
 
     adev->pcm_modem_dl  = NULL;
